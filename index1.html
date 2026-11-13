@@ -1,0 +1,204 @@
+<！DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#f4efe7">
+<title>東京日和｜2026 東京八日旅行手帳</title>
+<style>
+:root{--ink:#3d3834;--muted:#6c635b;--paper:#f4efe7;--card:#faf7f1;--sage:#5f7062;--sage-soft:#e3e8e0;--rose:#c9aaa1;--clay:#c2a68c;--line:#ddd3c6;--red:#9b1d36;--serif:Georgia,"Noto Serif TC","Songti TC","PMingLiU",serif}
+*{box-sizing:border-box}[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.75 -apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;padding:0 env(safe-area-inset-right) calc(96px + env(safe-area-inset-bottom,0px)) env(safe-area-inset-left)}
+main{max-width:680px;margin:0 auto;padding:0 14px}
+.hero{position:relative;margin:0 -14px;background:var(--paper)}
+.hero img{display:block;width:100%;height:auto}.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(244,239,231,.88) 0,rgba(244,239,231,.55) 45%,rgba(244,239,231,0) 70%);pointer-events:none}.ov{z-index:1}
+.ov{position:absolute;left:6%;top:calc(7% + env(safe-area-inset-top,0px));width:54%}
+.k{margin:0;font:700 clamp(.5rem,2.2vw,.7rem)/1.4 var(--serif);letter-spacing:.2em;color:var(--red)}
+.ov h1{margin:4px 0 2px;font:600 clamp(1.8rem,8.4vw,2.8rem)/1.2 var(--serif);letter-spacing:.14em}
+.s{margin:0;font-size:clamp(.62rem,2.7vw,.85rem);letter-spacing:.06em;color:var(--muted)}
+#status{display:inline-block;margin-top:10px;padding:3px 11px;border:1px solid var(--red);border-radius:999px;color:var(--red);font-size:.8rem;font-weight:700;background:rgba(244,239,231,.7)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;margin:0 0 14px}
+.h{margin:0 0 12px;font:600 1.15rem/1.3 var(--serif);letter-spacing:.08em}.h small{display:block;margin-top:2px;font:600 .66rem/1.4 var(--serif);letter-spacing:.2em;color:var(--sage)}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding:8px 0;scrollbar-width:none;position:relative}.tabs::-webkit-scrollbar{display:none}
+.tab{flex:0 0 auto;position:relative;min-height:48px;padding:4px 15px;border:1px solid var(--line);border-radius:14px;background:var(--card);color:var(--muted);font:inherit;font-size:.92rem;font-weight:700;line-height:1.25;cursor:pointer}
+.tab small{display:block;font-size:.74rem;font-weight:500}.tab[aria-selected=true]{background:var(--sage);border-color:var(--sage);color:#fff}
+.tab.today::after{content:"";position:absolute;top:5px;right:6px;width:6px;height:6px;border-radius:50%;background:var(--red)}
+#dtabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;margin:0 -14px;padding:8px 14px;background:rgba(244,239,231,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.dh{display:flex;align-items:center;gap:14px;margin:18px 0 4px}.dn{font:600 2.3rem/1 var(--serif);color:var(--sage);letter-spacing:.04em}.dd{font-size:.88rem;color:var(--muted);letter-spacing:.06em}.db{font:600 1.15rem/1.4 var(--serif);letter-spacing:.04em}
+.tip{position:relative;margin:20px 0 22px;padding:14px;background:#efe7db;border-radius:4px;font-size:.95rem}
+.tip::before{content:"";position:absolute;top:-8px;left:18px;width:66px;height:16px;background:repeating-linear-gradient(135deg,#c9b8a6 0 6px,#d9ccbd 6px 12px);opacity:.8;transform:rotate(-2deg)}
+.tl{border-left:1px solid #cdc3b6;margin-left:6px;padding-left:18px}.ti{position:relative;padding:0 0 24px}.ti::before{content:"";position:absolute;left:-23px;top:8px;width:9px;height:9px;border-radius:50%;background:var(--rose);border:2px solid var(--paper)}
+.tm{font-variant-numeric:tabular-nums;letter-spacing:.05em;color:var(--sage);font-size:.9rem;font-weight:700}
+.tc{display:flex;gap:12px;justify-content:space-between;align-items:flex-start}.tc>div:first-child{flex:1;min-width:0}
+.tt{font-size:1.06rem;font-weight:700;line-height:1.5}.ds{margin-top:2px;color:var(--muted);font-size:.96rem;overflow-wrap:anywhere}.ds a{color:var(--sage)}
+.go{display:inline-flex;align-items:center;min-height:40px;margin-top:6px;padding:0 14px;border:1px solid var(--line);border-radius:999px;color:var(--sage);font-size:.88rem;font-weight:700;text-decoration:none;background:var(--card)}
+.pol{flex:0 0 88px;display:flex;flex-direction:column;gap:6px}.pol img{display:block;width:88px;height:88px;object-fit:cover;background:#fff;padding:3px;border:1px solid var(--line);box-shadow:0 1px 3px rgba(61,56,52,.12)}.pol.m img{height:56px}
+.pn{display:flex;justify-content:space-between;gap:10px}.pn button,.btn{min-height:46px;padding:8px 18px;border:1px solid var(--sage);border-radius:999px;background:transparent;color:var(--sage);font:inherit;font-weight:700;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
+.btn.f{background:var(--sage);color:#fff}
+.pass{border:1px solid var(--line);border-radius:14px;margin:0 0 12px;background:#fffdf9;overflow:hidden}.pass .hd{display:flex;justify-content:space-between;padding:8px 14px;background:var(--sage-soft);font-size:.85rem;font-weight:700;letter-spacing:.06em}
+.pass .rt{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-top:1px dashed var(--line)}.rt i{display:block;font:normal .75rem/1.4 var(--serif);letter-spacing:.14em;color:var(--muted)}.rt strong{font:600 1.7rem/1.2 var(--serif)}.rt .ar{color:var(--rose);font-size:1.2rem}
+.row{padding:8px 0;border-top:1px dashed var(--line);overflow-wrap:anywhere}.row:first-of-type{border-top:0}.row b{color:var(--sage)}
+.acts{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+.cp{display:flex;align-items:center;justify-content:space-between;min-height:58px;margin:0 0 10px;padding:12px 16px;border:1px solid var(--line);border-radius:14px;background:#fffdf9;color:var(--ink);font-weight:700;text-decoration:none}.cp::after{content:"↗";color:var(--sage)}.cp.d{border-color:var(--rose)}
+.mg{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.mc{margin:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fffdf9}.mc button{display:block;width:100%;padding:0;border:0;background:#fff;cursor:zoom-in}.mc img{display:block;width:100%;height:auto;max-height:240px;object-fit:contain}.mc figcaption{padding:8px 10px;font-size:.88rem;font-weight:700}.fb{display:none;padding:18px 12px;text-align:center;color:var(--muted);font-size:.9rem}.failed .fb{display:block}.failed button{display:none}
+#lb{position:fixed;inset:0;z-index:50;display:flex;flex-direction:column;background:rgba(40,36,32,.94)}#lb .sc{flex:1;overflow:auto;-webkit-overflow-scrolling:touch;display:flex}#lbi{display:block;width:100%;height:auto;margin:auto;background:#fff}#lbi.z{width:250%;max-width:none;margin:0}#lbx{align-self:flex-end;margin:calc(10px + env(safe-area-inset-top,0px)) 12px 8px;min-height:44px;padding:0 18px;border:0;border-radius:999px;background:#faf7f1;font:inherit;font-weight:700}
+nav{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(10px + env(safe-area-inset-bottom,0px));z-index:20;width:min(calc(100% - 20px),560px);display:grid;grid-template-columns:repeat(5,1fr);gap:2px;padding:5px;background:rgba(250,247,241,.94);backdrop-filter:blur(16px);border:1px solid var(--line);border-radius:20px;box-shadow:0 8px 24px rgba(61,56,52,.1)}
+nav button{min-height:48px;border:0;border-radius:15px;background:none;color:var(--muted);font:inherit;font-size:13px;font-weight:700;cursor:pointer}nav button.on{background:var(--sage-soft);color:var(--ink)}
+button:focus-visible,a:focus-visible{outline:3px solid #cbb5a9;outline-offset:2px}
+@media(max-width:400px){.pol{flex-basis:76px}.pol img{width:76px;height:76px}.pol.m img{height:48px}}
+@media(min-width:620px){.mg{grid-template-columns:repeat(3,minmax(0,1fr))}}
+</style>
+</head>
+<body>
+<main>
+<header class="hero"><img src="https://www.popdaily.com.tw/shaper/u/202008/773023e9-e766-4510-b265-6de5c72b6b5a.jpg?resize-w=900&resize-h=630&format=webp" alt="東京鐵塔與東京街景手繪插畫" width="900" height="630" referrerpolicy="no-referrer" fetchpriority="high"><div class="ov"><p class="k">TRAVEL JOURNAL</p><h1>東京日和</h1><p class="s">2026.11.21 — 11.28 · 8 DAYS</p><span id="status" role="status"></span></div></header>
+
+<section class="view" id="v-itinerary"><div class="tabs" id="dtabs" role="tablist" aria-label="日期"></div><div id="days"></div></section>
+
+<section class="view" id="v-info" hidden>
+<div class="card"><h2 class="h">航班<small>FLIGHT</small></h2>
+<div class="pass"><div class="hd"><span>CI0108 · 去程</span><span>11/21 六</span></div><div class="rt"><div><i>TAOYUAN T2</i><strong>14:25</strong></div><span class="ar">✈</span><div><i>NARITA T2</i><strong>18:30</strong></div></div></div>
+<div class="pass"><div class="hd"><span>CI0101 · 回程</span><span>11/28 六</span></div><div class="rt"><div><i>NARITA T2</i><strong>14:35</strong></div><span class="ar">✈</span><div><i>TAOYUAN T2</i><strong>17:45</strong></div></div></div>
+<div class="row"><b>行李</b>　托運 23kg／手提 7kg（每人）</div></div>
+<div class="card"><h2 class="h">火車時刻<small>TRAIN</small></h2>
+<div class="pass"><div class="hd"><span>自強號 3000 · 207 次</span><span>11/21 六</span></div><div class="rt"><div><i>花蓮</i><strong>07:30</strong></div><span class="ar">🚆</span><div><i>臺北</i><strong>10:08</strong></div></div></div>
+<div class="pass"><div class="hd"><span>自強號 3000 · 252 次</span><span>11/28 六</span></div><div class="rt"><div><i>臺北</i><strong>20:40</strong></div><span class="ar">🚆</span><div><i>花蓮</i><strong>23:11</strong></div></div></div></div>
+<div class="card"><h2 class="h">住宿與接送<small>HOTEL</small></h2>
+<div class="row"><b>飯店</b>　The Moto Hotel Ueno II（上野 2 號館）</div>
+<div class="row"><b>地址</b>　台東區東上野 1-10-13, Tokyo 110-0015</div>
+<div class="row"><b>時間</b>　Check-in 15:00 後／Check-out 11:00 前</div>
+<div class="row"><b>接送</b>　去回程均已預訂專車包車直達</div>
+<div class="acts"><a class="btn f" href="https://www.google.com/maps/search/?api=1&query=The+Moto+Hotel+Ueno+II" target="_blank" rel="noopener noreferrer">導航</a><a class="btn" href="tel:+81362842010">撥打電話</a></div></div>
+<div class="card"><h2 class="h">行前提醒<small>GOOD TO KNOW</small></h2>
+<div class="row"><b>免稅新制（11/1 起）</b><br>結帳先付含稅價，出境時在機場海關確認後才退款。購物帶護照、保留收據與 QR Code，免稅品要隨身攜帶，<b>不要先托運</b>。</div>
+<div class="row"><b>入境</b><br>出發前先填好 Visit Japan Web，截圖 QR Code，入境會快很多。</div>
+<div class="row"><b>穿著</b><br>11 月下旬早晚偏涼，富士山區更冷，建議洋蔥式穿搭並帶暖暖包。</div>
+<div class="row"><b>交通</b><br>可把 Suica／PASMO 加進手機錢包；緊急電話：警察 110、救護消防 119。</div></div>
+</section>
+
+<section class="view" id="v-coupon" hidden><div class="card"><h2 class="h">優惠券<small>COUPONS</small></h2><p class="ds" style="margin:0 0 12px">結帳前再打開，常用優惠集中在這裡。</p>
+<a class="cp d" href="https://japanportal.donki-global.com/coupon/?ptcd=0054000103" target="_blank" rel="noopener noreferrer">唐吉訶德優惠券</a>
+<a class="cp" href="https://drive.google.com/drive/folders/15tPJsxMOt83LFnWM2rW8H7E2MjupTphA?usp=drive_link" target="_blank" rel="noopener noreferrer">藥妝店必備優惠券</a>
+<a class="cp" href="https://drive.google.com/drive/folders/1A-rowM9WMfok8cG4FhvpCc-N6bhuBcrj?usp=drive_link" target="_blank" rel="noopener noreferrer">電器服飾運動用品</a>
+<a class="cp" href="https://drive.google.com/drive/folders/1JEuQ0ysYEatA9yJR4H2-6KotCT7oClp1?usp=drive_link" target="_blank" rel="noopener noreferrer">百貨公司機場免稅店</a></div></section>
+
+<section class="view" id="v-map" hidden><div class="card"><h2 class="h">逛街地圖<small>MAPS</small></h2><p class="ds" style="margin:0">依區域切換，點圖片可放大，放大後再點一下可拖曳查看。</p><div class="tabs" id="mtabs" role="tablist" aria-label="地區"></div><div class="mg" id="mgrid"></div></div></section>
+</main>
+
+<nav aria-label="主要導覽"><button class="on" data-v="itinerary">行程</button><button data-v="info">資訊</button><button data-v="coupon">優惠券</button><button data-v="map">地圖</button><button id="fs" aria-label="切換字體大小">Aa</button></nav>
+<div id="lb" hidden><button id="lbx" type="button">關閉 ✕</button><div class="sc"><img id="lbi" alt=""></div></div>
+
+<script>
+const A=(u,t)=>`<a href="${u}" target="_blank" rel="noopener noreferrer">${t}</a>`;
+const DAYS=[
+{d:'11/21 六',b:'抵達與飯店 Check-in',tip:'入境約需 1 小時；專車司機的聯絡方式請先截圖存手機。',it:[
+['18:30','🛬 抵達成田機場 T2','入境審查、領行李',null,'成田空港第2ターミナル'],
+['19:40','🚐 專車前往上野飯店','包車直達，車程約 1 到 1.5 小時'],
+['21:00','🏨 飯店 Check-in','辦理入住、放行李','https://ak-d.tripcdn.com/images/1z60512000mujmtn9CC4A_W_1280_853_R5.webp?proc=watermark/image_trip1,l_ne,x_16,y_16,w_67,h_16;digimark/t_image,logo_tripbinary;ignoredefaultwm,1A8F','The Moto Hotel Ueno II'],
+['21:30','🍢 阿美橫丁周邊宵夜','上野在地居酒屋或深夜食堂，營業時間各店不同，建議先看地圖確認','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2d6FDGsOWDxHe1XBLsOEqTj9BRKCWO4z-BJlC4D_kNQ&s=10','アメヤ横丁']]},
+{d:'11/22 日',b:'淺草下町與晴空塔',tip:'週日人多，點燈時間以官方公告為準。',it:[
+['08:30','🚇 飯店出發','步行至銀座線稻荷町站，搭往淺草方向，約 5 分鐘到終點站淺草'],
+['09:00','⛩️ 雷門','出站即到，先在雷門拍照，人潮還不多','https://www.senso-ji.jp/images_en/visit_img08_l.jpg','浅草寺'],
+['10:00','🍡 仲見世通與周邊小吃','逛仲見世通，品嚐人形燒、炸肉餅、梅園甜品等，當作輕午餐'],
+['12:00','🚆 淺草 → 東京晴空塔站','東武晴空塔線一站約 4 分鐘，不用走長路'],
+['12:30','🛍️ 晴空塔城（Solamachi）','逛街(DAISO、Uniqlo、LOFT)、咖啡休息，也可看晴空塔外觀','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkGC3Rhv8htpYxkMmHlWfUmovIHxt5kIZAbeBRrAK92A&s','東京ソラマチ'],
+['16:30','🥩 敘敘苑 晴空塔城店','燒肉晚餐與傍晚高空景','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHpfp2nMpbDsPaXz2knGF6qWYsJXYJf_mYYmCKf_UCKA&s=10','叙々苑 東京スカイツリータウン・ソラマチ店'],
+['18:30','🎄 4F 天空競技場聖誕燈飾','8 公尺星星聖誕樹、STAR LIGHT CORRIDOR 燈飾走廊與聖誕市集，可坐下喝熱飲、吃限定甜點，拍完再看晴空塔特別點燈。<br>'+A('https://prtimes.jp/main/html/rd/p/000000459.000041446.html','主辦單位公告'),null,'東京スカイツリー'],
+['19:30','🚇 回上野','搭東武線回淺草，轉銀座線到稻荷町，約 25 分鐘；太累可搭計程車']]},
+{d:'11/23 一',b:'木更津 Outlet 購物',tip:'11/23 是日本國定假日（勤勞感謝日），巴士與園區都會很擠。建議事先預約東京站往返巴士座位，並確認回程末班時間。',it:[
+['08:15','🚃 上野搭 JR 到東京站','約 10 分鐘，前往八重洲口巴士站'],
+['09:00','🚌 東京站搭高速巴士到木更津','車程約 1 小時，視路況而定',null,'東京駅 八重洲口'],
+['10:30–17:00','🛍️ 三井 Outlet Park 木更津','關東最大 Outlet：國際精品、日系服飾、運動品牌與園區美食','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIvwStovGUgJmUVcYKMNR6q0IrHUXE93oVJu1mjizAqw&s=10','三井アウトレットパーク木更津'],
+['17:30','🚌 搭巴士返回東京站','預計 19:00 左右抵達，假日可能更久'],
+['19:30','🎄 上野恩賜公園耶誕市集＆晚餐','先放好購物袋再出門。不忍池會場 12:00–22:00。<br>'+A('https://christmas-advent.jp/tokyo-ueno/','市集官方資訊'),null,'上野恩賜公園']]},
+{d:'11/24 二',b:'Klook 富士山一日遊',tip:'河口湖一帶氣溫低，帶好外套與暖暖包。能否看到富士山視天氣而定。',it:[
+['07:00','🚌 集合出發','專車前往富士山周邊'],
+['09:00–17:00','🗻 富士山景點巡禮','• 新倉山淺間公園（五重塔＋富士山）<br>• 日川時計店（街景拍照）<br>• 忍野八海（湧泉與小吃）<br>• 山中湖（天鵝湖景）<br>• 河口湖 LAWSON（經典打卡點）<br>• 河口湖楓葉迴廊（紅葉隧道）',['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWHzH6eF42spcpXOfBXVwP92iKyLA5izuhUkeMej2z2Q&s=10','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG_9FrAGUSipN-TB0iRBgEppA8I6IUfBYXQg3zFdVL-A&s=10','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvWrEegE9__50WFhA3MDGO_dNT3y6t0KlAqNFHLVHAwg&s=10']],
+['17:30','🚌 開始返程','抵達上野時間視路況而定'],
+['晚間','🍜 回上野晚餐休息','飯店周邊用餐']]},
+
+{d:'11/25 三',b:'芝公園・東京鐵塔・麻布台之丘・六本木櫸坂聖誕夜',tip:'全程以日比谷線移動，上野直達神谷町與六本木。',it:[
+['09:00','🚇 飯店出發','步行至日比谷線站，搭往中目黑方向，約 25～30 分鐘到神谷町'],
+['09:45','🌳 芝公園・增上寺','從神谷町站步行約 10 分鐘，在增上寺前拍東京鐵塔，路面平坦'],
+['10:30','🗼 東京鐵塔','不上展望台，在鐵塔下近拍紅白鐵塔','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT69Gob7FysV5tZwAIIMR0CmtaTERgFeDIFw2zlMP2MMw&s=10','東京タワー'],
+['12:15','🍴 麻布台之丘午餐','從東京鐵塔步行約 10 分鐘，或搭計程車；商場內餐廳選擇多、座位舒適'],
+['13:45','🏙️ 麻布台之丘聖誕市集','新地標街區與高空市景，可坐著喝熱飲休息',['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo-s1zp21sBueM5gfVWQ_c8jVQ35gg5AJAiyv8_iwYtg&s=10','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS3nexc30SRPeaIbJH40V3ci1lj9UxSopbO6xzZCEQ1w&s=10'],'麻布台ヒルズ'],
+['15:30','🚇 神谷町 → 六本木','日比谷線一站，抵達後先在六本木之丘咖啡廳休息'],
+['17:00','✨ 六本木櫸坂大道聖誕點燈','約 400m 燈海，盡頭正對遠方東京鐵塔；毛利庭園、66 Plaza 17:00 後也有燈飾<br>'+A('https://www.christmas.hills-site.com/','2026 聖誕活動公告'),'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvryMr5l6Ptx1dilfqK6vH6wxvyAmFxlESTG1I0K2iYg&s=10','けやき坂通り'],
+['18:00','🍺 六本木之丘聖誕市集','大屋根廣場，11/21 起，今年第 20 屆，有屋頂不怕冷'],
+['19:00','🥩 六本木晚餐','六本木之丘內餐廳，不用再走遠'],
+['20:15','🚇 回上野','六本木搭日比谷線直達上野，約 25 分鐘']]},
+
+{d:'11/26 四',b:'外苑銀杏、表參道、原宿與澀谷夜景',tip:'11/26 東京日落約 16:30，SHIBUYA SKY 預約15:20〜15:39入場的時段，先看日落再看夜景。建議全程搭銀座線，澀谷是起點站較容易有座位。',it:[
+['08:00','🚇 飯店出發','步行至銀座線站，搭往澀谷方向，約 25 分鐘直達外苑前'],
+['08:30','🍂 明治神宮外苑・銀杏大道','11 月下旬正值銀杏季，漫步銀杏並木與聖德紀念繪畫館，路面平坦','https://img.letsgojp.com/2019/09/icho3-1757469166.webp','明治神宮外苑'],
+['10:30','☕ 表參道之丘','外苑前搭銀座線一站到表參道，午餐、咖啡與精品街散步','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv4OeMEYrE5HJK49FA74f4BkHWjN5xGohUPgSTy2XFsg&s=10','表参道ヒルズ'],
+['12:30','🛍️ 原宿竹下通','沿表參道步行約 15 分鐘，人多路窄，可只逛前半段','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_ctuZYoN_mKB79zZlLwAoZ4kjhJDWGhMBytu99b4OqQ&s=10','竹下通り'],
+['14:30','🚆 原宿 → 澀谷','JR 山手線一站約 3 分鐘，抵達後可先到商場補充體力'],
+['15:00','🌆 SHIBUYA SKY 澀谷展望台','360 度俯瞰澀谷十字路口，日落到夜景一次看完，有電梯','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4vF1ilovz-dkkfmmxIHVYHJb4zCuCYxcvkiPu-brclQ&s=10','SHIBUYA SKY'],
+['18:30','🥩 澀谷晚餐','Scramble Square 或 Hikarie 商場餐廳，座位舒適，餐後搭銀座線直達上野']]},
+
+{d:'11/27 五',b:'築地海鮮與銀座丸之內',tip:'明天出境請提早到機場：先帶著免稅品、護照與收據到海關自助機（KIOSK）查驗，查驗完再托運行李。免稅品請勿拆封使用，今晚打包時放在容易取出的袋子，收據也一併放好。',it:[
+['08:30','🍣 築地場外市場','早餐吃海鮮丼、玉子燒、烤干貝，邊逛邊吃；通道較窄，建議早點到避開人潮',null,'築地場外市場'],
+['11:00','🛍️ 銀座商圈','LV、CHANEL、Onitsuka Tiger、UNIQLO、無印良品旗艦店，午餐在銀座解決；百貨公司有電梯、座位多，適合慢慢逛',null,'銀座'],
+['14:30','🚇 銀座 → 東京車站','搭丸之內線一站約 2 分鐘，不用走路'],
+['15:00','🏛️ 東京車站紅磚站舍','丸之內側的百年紅磚建築，白天光線好，適合合照；路面平坦',null,'東京駅 丸の内駅舎'],
+['16:00','🎄 KITTE 白色聖誕樹','1 樓中庭約 15m 的聖誕樹，約每 30 分鐘一場燈光秀；室內可坐著休息，等天黑再去看燈<br>'+A('https://marunouchi.jp-kitte.jp/shop/white_kitte2026/','WHITE KITTE 公告'),null,'KITTE丸の内'],
+['16:45','🎄 丸之內仲通聖誕燈飾','約 1.2 公里的香檳金街樹燈海，天黑後最美；可在「冬のテラス」座位區坐著看燈。今年點燈時間以官網為準<br>'+A('https://www.marunouchi.com/pickup/event/10727/','丸之內公告')+' ・ '+A('https://www.marunouchi.com/en/pickup/event/11040/','冬のテラス公告'),null,'丸の内仲通り'],
+['18:00','🍽️ 丸之內晚餐','就在燈飾附近用餐，看完燈不用再移動'],
+['19:30','🧳 返回飯店整理打包','整理戰利品與行李，免稅品與收據集中放好，明天要早起前往機場']]},
+{d:'11/28 六',b:'輕鬆返台',tip:'新制下免稅品需出示給海關，請先查驗再托運行李。',it:[
+['08:45','🏨 Check-out','大廳集合、清點行李'],
+['09:00','🚐 送機專車出發','直達成田 T2'],
+['10:30','🛃 抵達成田 T2','先帶免稅品與護照到海關自助機台查驗，再到華航櫃檯報到托運（以現場指示為準）',null,'成田空港第2ターミナル'],
+['彈性','🛍️ 免稅店最後採買','視查驗與報到的排隊情況調整，預留登機前的緩衝時間'],
+['14:35','🛫 華航返台','17:45 抵達桃園 T2']]}
+];
+const MAPS={'上野':[['上野逛街與美食','https://bobbytravel.tw/wp-content/uploads/2026/10/20261008011642_0_adf926.webp'],['飯店位置圖','https://raw.githubusercontent.com/rowan516/my-images/refs/heads/main/images/HOTEL.jpg']],
+'淺草/晴空塔':[['淺草/晴空塔位置','https://img.gototravel.tw/2019/tokyo/travel/shibuya-sky/Image%2016-1.jpg'],['淺草美食景點','https://pimg.1px.tw/blog/youngmusic/album/868517267815104093/871037143326767842.png'],['淺草美食','https://wkitty.tw/wp-content/uploads/2018/09/1537960365-7c2dfe71b4ec69832a9b3d624faf586d.png'],['晴空塔樓層導覽','https://img.gototravel.tw/2019/tokyo/food/Mugitooribu-ramen/Image%2017.jpg']],
+'原宿/澀谷':[['原宿/澀谷位置','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM3W2XPz01IlzGrqhPust6FK7okMl0exfyi2y9wDG3LG1zZC-KKAXQUREm&s=10'],['原宿表參道竹下通','https://wkitty.tw/wp-content/uploads/2019/11/1573099827-db069a8b06a519629db3e819f3921c03.png'],['原宿逛街地圖','https://raw.githubusercontent.com/rowan516/my-images/refs/heads/main/images/Harajuku2.jpg'],['竹下通商店街','https://img.bigfang.tw/2023/01/1674743928-9675c1ff34145d7b1a68d3ddb6c0e555.png'],['表參道逛街','https://bobbytravel.tw/wp-content/uploads/pixnet/3b570711fb11e637a231f815894a2041.jpg'],['澀谷景點','https://bobbytravel.tw/wp-content/uploads/2024/07/20240627155248_0_1aee7f-768x566.jpg']],
+'銀座/丸之內':[['銀座景點','https://bobbytravel.tw/wp-content/uploads/pixnet/b52b725fe3bbe4bbf956b8b990ca938d.jpg'],['銀座有樂町','https://wkitty.tw/wp-content/uploads/2019/11/1573217031-06d5dc8487aec70af21341955d5a1d15.png'],['東京車站景點','https://bobbytravel.tw/wp-content/uploads/pixnet/951e0c69e39dfebbe62a760f8a5147fe.jpg'],['築地市場美食','https://bobbytravel.tw/wp-content/uploads/pixnet/87bc29929d40fd22fe3ea1c34ba961e2.jpg'],['築地市場美食 2','https://andyventure.com/wp-content/uploads/japan/tsukiji/%E7%AF%89%E5%9C%B0%E5%B8%82%E5%A0%B4%E7%BE%8E%E9%A3%9F%E5%9C%B0%E5%9C%96.jpg?v=4']],
+'六本木/東京鐵塔':[['六本木地圖','https://upd-api.funtime.com.tw/uploads/_69803ffd54.png'],['六本木點燈','https://alinalife.tw/wp-content/uploads/2023/11/20231108120629_96.jpg'],['六本木新城','https://alinalife.tw/wp-content/uploads/2023/11/20231108120626_86.jpg'],['鐵塔拍攝點總覽','https://attach.mobile01.com/attach/202003/mobile01-66fb0d663aea5537e700bd7b82060a5d.png'],['1 三田十字路口','https://attach.mobile01.com/attach/202003/mobile01-7d07cf74b8b26c0f9c8b3e59db399a16.jpg'],['2 赤羽交叉口','https://attach.mobile01.com/attach/202003/mobile01-ecbca34c3832c2f53c1b8e9d9dcc9526.jpg'],['3 芝公園 1 號地','https://attach.mobile01.com/attach/202003/mobile01-d4b04cc8d72cf342e179d0c412ade3b7.jpg'],['4 增上寺','https://attach.mobile01.com/attach/202003/mobile01-9e4f18ed238c10b2de21b453810e6271.jpg'],['5 芝公園 4 號地','https://attach.mobile01.com/attach/202003/mobile01-8800675f4c397b3aedb3e433a2640f63.jpg'],['6 鐵塔正下方','https://attach.mobile01.com/attach/202003/mobile01-b23ef87a079d6626d3bfa4847859d350.jpg'],['7 停車場階梯','https://attach.mobile01.com/attach/202003/mobile01-f67e15e74ed62b67088838ae5a95f7c5.jpg']],
+'其他':[['三井木更津 OUTLET','https://mitsui-shopping-park.com/mop/file/filter/kisarazu/floor/00020_1f.png']]};
+
+
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const ST=t=>t.replace(/^[\p{Extended_Pictographic}\uFE0F\u200d\s]+/u,'');
+const dt=$('#dtabs'),box=$('#days');let cur=0;
+const t0=new Date(),diff=Math.floor((new Date(t0.getFullYear(),t0.getMonth(),t0.getDate())-new Date(2026,10,21))/864e5);
+$('#status').textContent=diff<0?`距離出發還有 ${-diff} 天`:diff<8?`旅途第 ${diff+1} 天`:'旅程圓滿結束';
+DAYS.forEach((d,i)=>{
+ const n=i+1;
+ dt.insertAdjacentHTML('beforeend',`<button class="tab${i===diff?' today':''}" role="tab" id="t${n}" aria-controls="d${n}" data-i="${i}">D${n}<small>${d.d}</small></button>`);
+ const its=d.it.map(x=>{const im=x[3]?[].concat(x[3]):[];return `<div class="ti"><div class="tm">${x[0]}</div><div class="tc"><div><div class="tt">${ST(x[1])}</div>${x[2]?`<div class="ds">${x[2]}</div>`:''}${x[4]?`<a class="go" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(x[4])}" target="_blank" rel="noopener noreferrer">導航 ↗</a>`:''}</div>${im.length?`<div class="pol${im.length>1?' m':''}">${im.map(u=>`<img loading="lazy" referrerpolicy="no-referrer" src="${u}" alt="">`).join('')}</div>`:''}</div></div>`}).join('');
+ box.insertAdjacentHTML('beforeend',`<section class="day" id="d${n}" role="tabpanel" aria-labelledby="t${n}" hidden><div class="dh"><span class="dn">D${n}</span><div><div class="dd">${d.d}</div><div class="db">${d.b}</div></div></div><p class="tip">${d.tip}</p><div class="tl">${its}</div><div class="pn"><span>${i?`<button data-go="${i-1}">← D${i}</button>`:''}</span><span>${i<DAYS.length-1?`<button data-go="${i+1}">D${n+1} →</button>`:''}</span></div></section>`);
+});
+function tabsTop(force){const t=box.getBoundingClientRect().top+scrollY-dt.offsetHeight-6;if(force||scrollY>t)scrollTo({top:Math.max(0,t),behavior:'smooth'})}
+function show(i,mode){cur=i;$$('.day').forEach((s,k)=>s.hidden=k!==i);$$('#dtabs .tab').forEach((b,k)=>{b.setAttribute('aria-selected',k===i);if(k===i)dt.scrollTo({left:b.offsetLeft-(dt.clientWidth-b.offsetWidth)/2,behavior:'smooth'})});try{history.replaceState(null,'','#d'+(i+1))}catch(e){}if(mode)tabsTop(mode==='f')}
+dt.addEventListener('click',e=>{const b=e.target.closest('.tab');if(b)show(+b.dataset.i,'s')});
+box.addEventListener('click',e=>{const b=e.target.closest('[data-go]');if(b)show(+b.dataset.go,'f')});
+function go(v){$$('.view').forEach(e=>e.hidden=e.id!=='v-'+v);$$('nav [data-v]').forEach(b=>b.classList.toggle('on',b.dataset.v===v));scrollTo(0,0);try{if(v==='itinerary')show(cur);else history.replaceState(null,'','#'+v)}catch(e){}}
+$$('nav [data-v]').forEach(b=>b.onclick=()=>go(b.dataset.v));
+const hm=/^#d([1-8])$/.exec(location.hash),vm=/^#(info|coupon|map)$/.exec(location.hash);
+show(hm?+hm[1]-1:(diff>=0&&diff<8?diff:0));if(vm)go(vm[1]);
+
+const mt=$('#mtabs'),mg=$('#mgrid');
+function showMap(k){$$('#mtabs .tab').forEach(b=>b.setAttribute('aria-selected',b.dataset.k===k));mg.innerHTML=MAPS[k].map(([t,u])=>`<figure class="mc"><button type="button" data-u="${u}" data-t="${t}" aria-label="放大 ${t}"><img referrerpolicy="no-referrer" loading="lazy" src="${u}" alt="${t}"></button><div class="fb">圖片無法載入<br><a href="${u}" target="_blank" rel="noopener noreferrer">開啟原圖 ↗</a></div><figcaption>${t}</figcaption></figure>`).join('')}
+Object.keys(MAPS).forEach(k=>mt.insertAdjacentHTML('beforeend',`<button class="tab" role="tab" data-k="${k}">${k}</button>`));
+mt.addEventListener('click',e=>{const b=e.target.closest('.tab');if(b)showMap(b.dataset.k)});showMap(Object.keys(MAPS)[0]);
+const lb=$('#lb'),lbi=$('#lbi');
+mg.addEventListener('click',e=>{const b=e.target.closest('button[data-u]');if(!b)return;lbi.src=b.dataset.u;lbi.alt=b.dataset.t;lbi.className='';lb.hidden=false;document.body.style.overflow='hidden'});
+lbi.onclick=()=>lbi.classList.toggle('z');
+const closeLb=()=>{lb.hidden=true;lbi.removeAttribute('src');document.body.style.overflow=''};$('#lbx').onclick=closeLb;
+addEventListener('keydown',e=>{if(e.key==='Escape'&&!lb.hidden)closeLb()});
+addEventListener('error',e=>{const t=e.target;if(t.tagName!=='IMG')return;const m=t.closest('.mc');if(m)m.classList.add('failed');else t.closest('.pol')?.remove()},true);
+
+const FS=['100%','112%','125%'],FL=['Aa','Aa+','Aa++'];let fi=0;
+try{fi=Math.min(2,+localStorage.getItem('tokyo-fs')||0)}catch(e){}
+function setFs(){document.documentElement.style.fontSize=FS[fi];$('#fs').textContent=FL[fi];try{localStorage.setItem('tokyo-fs',fi)}catch(e){}}
+$('#fs').onclick=()=>{fi=(fi+1)%3;setFs()};setFs();
+</script>
+</body>
+</html>
