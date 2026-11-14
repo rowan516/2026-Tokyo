@@ -93,67 +93,72 @@ button:focus-visible,a:focus-visible{outline:3px solid #cbb5a9;outline-offset:2p
 <script>
 const A=(u,t)=>`<a href="${u}" target="_blank" rel="noopener noreferrer">${t}</a>`;
 const DAYS=[
-{d:'11/21 六',b:'抵達與飯店 Check-in',tip:'入境約需 1 小時；專車司機的聯絡方式請先截圖存手機。',it:[
+{d:'11/21 六',b:'抵達與飯店 Check-in',tip:'入境約需 1 小時；Visit Japan Web QR Code 截圖存手機準備好。',it:[
 ['18:30','🛬 抵達成田機場 T2','入境審查、領行李',null,'成田空港第2ターミナル'],
 ['19:40','🚐 專車前往上野飯店','包車直達，車程約 1 到 1.5 小時'],
 ['21:00','🏨 飯店 Check-in','辦理入住、放行李','https://ak-d.tripcdn.com/images/1z60512000mujmtn9CC4A_W_1280_853_R5.webp?proc=watermark/image_trip1,l_ne,x_16,y_16,w_67,h_16;digimark/t_image,logo_tripbinary;ignoredefaultwm,1A8F','The Moto Hotel Ueno II'],
 ['21:30','🍢 阿美橫丁周邊宵夜','上野在地居酒屋或深夜食堂，營業時間各店不同，建議先看地圖確認','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2d6FDGsOWDxHe1XBLsOEqTj9BRKCWO4z-BJlC4D_kNQ&s=10','アメヤ横丁']]},
-{d:'11/22 日',b:'淺草下町與晴空塔',tip:'週日人多，點燈時間以官方公告為準。',it:[
+
+{d:'11/22 日',b:'淺草下町與晴空塔',tip:'週日人多，敘敘苑已訂16:30，建議提早10分鐘到；點燈時間以官方公告為準，晚上市集視體力決定去不去。',it:[
 ['08:30','🚇 飯店出發','步行至銀座線稻荷町站，搭往淺草方向，約 5 分鐘到終點站淺草'],
 ['09:00','⛩️ 雷門','出站即到，先在雷門拍照，人潮還不多','https://www.senso-ji.jp/images_en/visit_img08_l.jpg','浅草寺'],
 ['10:00','🍡 仲見世通與周邊小吃','逛仲見世通，品嚐人形燒、炸肉餅、梅園甜品等，當作輕午餐'],
 ['12:00','🚆 淺草 → 東京晴空塔站','東武晴空塔線一站約 4 分鐘，不用走長路'],
 ['12:30','🛍️ 晴空塔城（Solamachi）','逛街(DAISO、Uniqlo、LOFT)、咖啡休息，也可看晴空塔外觀','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkGC3Rhv8htpYxkMmHlWfUmovIHxt5kIZAbeBRrAK92A&s','東京ソラマチ'],
 ['16:30','🥩 敘敘苑 晴空塔城店','燒肉晚餐與傍晚高空景','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHpfp2nMpbDsPaXz2knGF6qWYsJXYJf_mYYmCKf_UCKA&s=10','叙々苑 東京スカイツリータウン・ソラマチ店'],
-['18:30','🎄 4F 天空競技場聖誕燈飾','8 公尺星星聖誕樹、STAR LIGHT CORRIDOR 燈飾走廊與聖誕市集，可坐下喝熱飲、吃限定甜點，拍完再看晴空塔特別點燈。<br>'+A('https://prtimes.jp/main/html/rd/p/000000459.000041446.html','主辦單位公告'),null,'東京スカイツリー'],
-['19:30','🚇 回上野','搭東武線回淺草，轉銀座線到稻荷町，約 25 分鐘；太累可搭計程車']]},
-{d:'11/23 一',b:'木更津 Outlet 購物',tip:'11/23 是日本國定假日（勤勞感謝日），巴士與園區都會很擠。建議事先預約東京站往返巴士座位，並確認回程末班時間。',it:[
+['18:30','🎄 4F 天空競技場聖誕燈飾','8 公尺星星聖誕樹、STAR LIGHT CORRIDOR 燈飾走廊與聖誕市集，可坐下喝熱飲、吃限定甜點，拍完再看晴空塔特別點燈。<br>'+A('https://prtimes.jp/main/html/rd/p/000000459.000041446.html','晴空塔官方公告'),null,'東京スカイツリー'],
+['19:30','🚇 回上野','搭東武線回淺草，轉銀座線到稻荷町，約 25 分鐘；太累可搭計程車'],
+['20:15','🎄 上野恩賜公園耶誕市集','晚餐已在敘敘苑吃過，這裡只逛逛、喝熱飲、吃點小點心。不忍池會場 12:00–22:00。<br>'+A('https://christmas-advent.jp/tokyo-ueno/','上野市集官方公告'),null,'上野恩賜公園']]},
+
+{d:'11/23 一',b:'木更津 Outlet 購物',tip:'日本國定假日（勤勞感謝日）人潮多，建議預約東京站往返巴士座位並確認回程末班。回程可能塞車，晚餐請預留彈性；Outlet 結帳時請確認退稅方式並登記退款資訊。',it:[
 ['08:15','🚃 上野搭 JR 到東京站','約 10 分鐘，前往八重洲口巴士站'],
 ['09:00','🚌 東京站搭高速巴士到木更津','車程約 1 小時，視路況而定',null,'東京駅 八重洲口'],
 ['10:30–17:00','🛍️ 三井 Outlet Park 木更津','關東最大 Outlet：國際精品、日系服飾、運動品牌與園區美食','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIvwStovGUgJmUVcYKMNR6q0IrHUXE93oVJu1mjizAqw&s=10','三井アウトレットパーク木更津'],
 ['17:30','🚌 搭巴士返回東京站','預計 19:00 左右抵達，假日可能更久'],
-['19:30','🎄 上野恩賜公園耶誕市集＆晚餐','先放好購物袋再出門。不忍池會場 12:00–22:00。<br>'+A('https://christmas-advent.jp/tokyo-ueno/','市集官方資訊'),null,'上野恩賜公園']]},
-{d:'11/24 二',b:'Klook 富士山一日遊',tip:'河口湖一帶氣溫低，帶好外套與暖暖包。能否看到富士山視天氣而定。',it:[
+['19:30','🍽️ 回上野晚餐休息','視回程巴士時間彈性安排，先放好購物袋再出門用餐']]},
+
+{d:'11/24 二',b:'Klook 富士山一日遊',tip:'河口湖氣溫低，建議帶外套與暖暖包。能否看到富士山視天氣而定，楓葉狀況以當天為準。',it:[
 ['07:00','🚌 集合出發','專車前往富士山周邊'],
 ['09:00–17:00','🗻 富士山景點巡禮','• 新倉山淺間公園（五重塔＋富士山）<br>• 日川時計店（街景拍照）<br>• 忍野八海（湧泉與小吃）<br>• 山中湖（天鵝湖景）<br>• 河口湖 LAWSON（經典打卡點）<br>• 河口湖楓葉迴廊（紅葉隧道）',['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWHzH6eF42spcpXOfBXVwP92iKyLA5izuhUkeMej2z2Q&s=10','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG_9FrAGUSipN-TB0iRBgEppA8I6IUfBYXQg3zFdVL-A&s=10','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvWrEegE9__50WFhA3MDGO_dNT3y6t0KlAqNFHLVHAwg&s=10']],
 ['17:30','🚌 開始返程','抵達上野時間視路況而定'],
-['晚間','🍜 回上野晚餐休息','飯店周邊用餐']]},
+['晚間','🍽️ 回上野晚餐休息','飯店周邊用餐']]},
 
-{d:'11/25 三',b:'芝公園・東京鐵塔・麻布台之丘・六本木櫸坂聖誕夜',tip:'全程以日比谷線移動，上野直達神谷町與六本木。',it:[
+{d:'11/25 三',b:'芝公園・東京鐵塔・麻布台之丘・六本木櫸坂點燈',tip:'全程搭日比谷線，上野直達神谷町與六本木。點燈約17:00開始，建議15:30先休息。',it:[
 ['09:00','🚇 飯店出發','步行至日比谷線站，搭往中目黑方向，約 25～30 分鐘到神谷町'],
 ['09:45','🌳 芝公園・增上寺','從神谷町站步行約 10 分鐘，在增上寺前拍東京鐵塔，路面平坦'],
 ['10:30','🗼 東京鐵塔','不上展望台，在鐵塔下近拍紅白鐵塔','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT69Gob7FysV5tZwAIIMR0CmtaTERgFeDIFw2zlMP2MMw&s=10','東京タワー'],
 ['12:15','🍴 麻布台之丘午餐','從東京鐵塔步行約 10 分鐘，或搭計程車；商場內餐廳選擇多、座位舒適'],
 ['13:45','🏙️ 麻布台之丘聖誕市集','新地標街區與高空市景，可坐著喝熱飲休息',['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo-s1zp21sBueM5gfVWQ_c8jVQ35gg5AJAiyv8_iwYtg&s=10','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS3nexc30SRPeaIbJH40V3ci1lj9UxSopbO6xzZCEQ1w&s=10'],'麻布台ヒルズ'],
 ['15:30','🚇 神谷町 → 六本木','日比谷線一站，抵達後先在六本木之丘咖啡廳休息'],
-['17:00','✨ 六本木櫸坂大道聖誕點燈','約 400m 燈海，盡頭正對遠方東京鐵塔；毛利庭園、66 Plaza 17:00 後也有燈飾<br>'+A('https://www.christmas.hills-site.com/','2026 聖誕活動公告'),'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvryMr5l6Ptx1dilfqK6vH6wxvyAmFxlESTG1I0K2iYg&s=10','けやき坂通り'],
+['17:00','✨ 六本木櫸坂大道聖誕點燈','約 400m 燈海，盡頭正對遠方東京鐵塔；毛利庭園、66 Plaza 17:00 後也有燈飾<br>'+A('https://www.christmas.hills-site.com/','六本木官方公告'),'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvryMr5l6Ptx1dilfqK6vH6wxvyAmFxlESTG1I0K2iYg&s=10','けやき坂通り'],
 ['18:00','🍺 六本木之丘聖誕市集','大屋根廣場，11/21 起，今年第 20 屆，有屋頂不怕冷'],
 ['19:00','🥩 六本木晚餐','六本木之丘內餐廳，不用再走遠'],
 ['20:15','🚇 回上野','六本木搭日比谷線直達上野，約 25 分鐘']]},
 
-{d:'11/26 四',b:'外苑銀杏、表參道、原宿與澀谷夜景',tip:'11/26 東京日落約 16:30，SHIBUYA SKY 預約15:20〜15:39入場的時段，先看日落再看夜景。建議全程搭銀座線，澀谷是起點站較容易有座位。',it:[
+{d:'11/26 四',b:'外苑銀杏、表參道、原宿與澀谷夜景',tip:'日落約 16:30，SHIBUYA SKY 預約 15:20–15:39 入場，先看日落再看夜景。早上與晚上搭銀座線，午後原宿到澀谷搭 JR 山手線；晚上從澀谷（起點站）上車較容易有座位。',it:[
 ['08:00','🚇 飯店出發','步行至銀座線站，搭往澀谷方向，約 25 分鐘直達外苑前'],
 ['08:30','🍂 明治神宮外苑・銀杏大道','11 月下旬正值銀杏季，漫步銀杏並木與聖德紀念繪畫館，路面平坦','https://img.letsgojp.com/2019/09/icho3-1757469166.webp','明治神宮外苑'],
 ['10:30','☕ 表參道之丘','外苑前搭銀座線一站到表參道，午餐、咖啡與精品街散步','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv4OeMEYrE5HJK49FA74f4BkHWjN5xGohUPgSTy2XFsg&s=10','表参道ヒルズ'],
 ['12:30','🛍️ 原宿竹下通','沿表參道步行約 15 分鐘，人多路窄，可只逛前半段','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_ctuZYoN_mKB79zZlLwAoZ4kjhJDWGhMBytu99b4OqQ&s=10','竹下通り'],
 ['14:30','🚆 原宿 → 澀谷','JR 山手線一站約 3 分鐘，抵達後可先到商場補充體力'],
-['15:00','🌆 SHIBUYA SKY 澀谷展望台','360 度俯瞰澀谷十字路口，日落到夜景一次看完，有電梯','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4vF1ilovz-dkkfmmxIHVYHJb4zCuCYxcvkiPu-brclQ&s=10','SHIBUYA SKY'],
+['15:20','🌆 SHIBUYA SKY 澀谷展望台','360 度俯瞰澀谷十字路口，日落到夜景一次看完，有電梯','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4vF1ilovz-dkkfmmxIHVYHJb4zCuCYxcvkiPu-brclQ&s=10','SHIBUYA SKY'],
 ['18:30','🥩 澀谷晚餐','Scramble Square 或 Hikarie 商場餐廳，座位舒適，餐後搭銀座線直達上野']]},
 
-{d:'11/27 五',b:'築地海鮮與銀座丸之內',tip:'明天出境請提早到機場：先帶著免稅品、護照與收據到海關自助機（KIOSK）查驗，查驗完再托運行李。免稅品請勿拆封使用，今晚打包時放在容易取出的袋子，收據也一併放好。',it:[
+{d:'11/27 五',b:'築地海鮮與銀座丸之內',tip:'築地場外市場建議早點到，部分店家較早收攤。丸之內燈飾天黑後最美，點燈時間以官方公告為準。',it:[
 ['08:30','🍣 築地場外市場','早餐吃海鮮丼、玉子燒、烤干貝，邊逛邊吃；通道較窄，建議早點到避開人潮',null,'築地場外市場'],
 ['11:00','🛍️ 銀座商圈','LV、CHANEL、Onitsuka Tiger、UNIQLO、無印良品旗艦店，午餐在銀座解決；百貨公司有電梯、座位多，適合慢慢逛',null,'銀座'],
 ['14:30','🚇 銀座 → 東京車站','搭丸之內線一站約 2 分鐘，不用走路'],
 ['15:00','🏛️ 東京車站紅磚站舍','丸之內側的百年紅磚建築，白天光線好，適合合照；路面平坦',null,'東京駅 丸の内駅舎'],
-['16:00','🎄 KITTE 白色聖誕樹','1 樓中庭約 15m 的聖誕樹，約每 30 分鐘一場燈光秀；室內可坐著休息，等天黑再去看燈<br>'+A('https://marunouchi.jp-kitte.jp/shop/white_kitte2026/','WHITE KITTE 公告'),null,'KITTE丸の内'],
-['16:45','🎄 丸之內仲通聖誕燈飾','約 1.2 公里的香檳金街樹燈海，天黑後最美；可在「冬のテラス」座位區坐著看燈。今年點燈時間以官網為準<br>'+A('https://www.marunouchi.com/pickup/event/10727/','丸之內公告')+' ・ '+A('https://www.marunouchi.com/en/pickup/event/11040/','冬のテラス公告'),null,'丸の内仲通り'],
+['16:00','🎄 KITTE 白色聖誕樹','1 樓中庭約 15m 的聖誕樹，約每 30 分鐘一場燈光秀；室內可坐著休息，等天黑再去看燈<br>'+A('https://marunouchi.jp-kitte.jp/shop/white_kitte2026/','KITTE 官方公告'),null,'KITTE丸の内'],
+['16:45','🎄 丸之內仲通聖誕燈飾','約 1.2 公里的香檳金街樹燈海，天黑後最美；可在「冬のテラス」座位區坐著看燈。今年點燈時間以官網為準<br>'+A('https://www.marunouchi.com/pickup/event/10727/','丸之內官方公告')+' ・ '+A('https://www.marunouchi.com/en/pickup/event/11040/','冬のテラス官方公告'),null,'丸の内仲通り'],
 ['18:00','🍽️ 丸之內晚餐','就在燈飾附近用餐，看完燈不用再移動'],
-['19:30','🧳 返回飯店整理打包','整理戰利品與行李，免稅品與收據集中放好，明天要早起前往機場']]},
-{d:'11/28 六',b:'輕鬆返台',tip:'新制下免稅品需出示給海關，請先查驗再托運行李。',it:[
+['19:30','🧳 返回飯店整理打包','整理戰利品與行李，退稅商品與收據集中放在容易取出的袋子，勿使用或食用；明天要早起前往機場']]},
+
+{d:'11/28 六',b:'輕鬆返台',tip:'請先帶護照與退稅商品到海關自助機（KIOSK）完成確認，再到華航櫃檯托運行李。',it:[
 ['08:45','🏨 Check-out','大廳集合、清點行李'],
 ['09:00','🚐 送機專車出發','直達成田 T2'],
-['10:30','🛃 抵達成田 T2','先帶免稅品與護照到海關自助機台查驗，再到華航櫃檯報到托運（以現場指示為準）',null,'成田空港第2ターミナル'],
-['彈性','🛍️ 免稅店最後採買','視查驗與報到的排隊情況調整，預留登機前的緩衝時間'],
+['10:30','🛃 抵達成田 T2','先帶退稅商品與護照到海關自助機台查驗，再到華航櫃檯報到托運（以現場指示為準）',null,'成田空港第2ターミナル'],
+['11:30','🛍️ 機場免稅店最後採買','視查驗與報到的排隊情況調整，預留登機前的緩衝時間'],
 ['14:35','🛫 華航返台','17:45 抵達桃園 T2']]}
 ];
 const MAPS={'上野':[['上野逛街與美食','https://bobbytravel.tw/wp-content/uploads/2026/10/20261008011642_0_adf926.webp'],['飯店位置圖','https://raw.githubusercontent.com/rowan516/my-images/refs/heads/main/images/HOTEL.jpg']],
